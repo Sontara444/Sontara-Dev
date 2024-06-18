@@ -1,0 +1,46 @@
+:root {
+    --skyblue: #2596be;
+    /* --skyblue-gradient-light:linear-gradient(90deg, #2596be, 68%, #fff); */
+    /* --skyblue-gradient:linear-gradient(90deg, #2596be 70%, #fff 100%); */
+    /* --skyblue-gradient:linear-gradient(90deg, #2596be 70%, #fff 100%); */
+    /* --skyblue-gradient:linear-gradient(90deg, #2596be 70%, #fff 100%); */
+    --grey: #666;
+    --light-grey: #555;
+    --black: #222;
+    --dark-black: #000;
+    --white: #fff;
+  }
+
+.services{
+    padding: 5rem 50rem 2rem 50rem;
+    background: var(--skyblue-gradient);
+    height: 45vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.services-header h2{
+    text-align: center;
+    font-size: 20px;
+    color: var(--white);
+    line-height: 3rem;
+}
+
+.services-container{
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-container p{
+    font-size: 18px;
+    color: var(--white);
+    line-height: 3rem;
+    place-items: center;
+    text-align: center;
+}

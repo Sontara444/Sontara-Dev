@@ -1,0 +1,73 @@
+:root {
+    --skyblue: #2596be;
+    --skyblue-gradient-light:linear-gradient(90deg, #2596be, 68%, #fff);
+    --skyblue-gradient:linear-gradient(90deg, #2596be 65%, #fff 100%);
+    --skyblue-gradient-btn:linear-gradient(90deg, #fff 0%, #2596be 50%, #fff 100%);
+    --grey: #666;
+    --light-grey: #555;
+    --black: #222;
+    --dark-black: #000;
+    --white: #fff;
+  }
+
+.contact-two{
+    padding: 5rem 50rem 2rem 50rem;
+    background: var(--skyblue-gradient-light);
+    height: 45vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contact-two-header h2{
+    text-align: center;
+    font-size: 42px;
+    color: var(--white);
+    line-height: 3rem;
+    font-size: 600;
+}
+
+.contact-two-container{
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-two-container p{
+    font-size: 18px;
+    color: var(--white);
+    line-height: 3rem;
+    place-items: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+.contact-two-button a{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    border-radius: 8px;
+    opacity: 1;
+    text-decoration: none;
+    border: none;
+    color: var(--dark-black);
+    padding: 1.8rem 4rem;
+    border: 1px solid rgba(128, 128, 128, 0.121);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.contact-two-button a{
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 0.706592px 0.706592px -0.625px, rgba(0, 0, 0, 0.07) 0px 1.80656px 1.80656px -1.25px, rgba(0, 0, 0, 0.07) 0px 3.62176px 3.62176px -1.875px, rgba(0, 0, 0, 0.063) 0px 6.8656px 6.8656px -2.5px, rgba(0, 0, 0, 0.05) 0px 13.6468px 13.6468px -3.125px, rgba(0, 0, 0, 0.024) 0px 30px 30px -3.75px;
+}
+
+.contact-two-button a:hover{
+    /* box-shadow: none;
+    background: rgba(128, 128, 128, 0.033); */
+
+    box-shadow: none;
+    background: var(--skyblue-gradient-btn);
+    color: var(--white);
+}
