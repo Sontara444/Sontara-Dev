@@ -1,9 +1,5 @@
 :root {
     --skyblue: #2596be;
-    /* --skyblue-gradient-light:linear-gradient(90deg, #2596be, 68%, #fff); */
-    /* --skyblue-gradient:linear-gradient(90deg, #2596be 70%, #fff 100%); */
-    /* --skyblue-gradient:linear-gradient(90deg, #2596be 70%, #fff 100%); */
-    /* --skyblue-gradient:linear-gradient(90deg, #2596be 70%, #fff 100%); */
     --grey: #666;
     --light-grey: #555;
     --black: #222;
@@ -12,8 +8,18 @@
   }
 
 .services{
-    padding: 5rem 50rem 2rem 50rem;
+    padding: 5rem 16rem 2rem 16rem;
     background: var(--skyblue-gradient);
+    height: 45vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-two{
+    padding: 5rem 8rem 2rem 8rem;
+    background: var(--skyblue-gradient-light);
     height: 45vh;
     overflow: hidden;
     display: flex;

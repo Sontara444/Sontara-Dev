@@ -5,20 +5,6 @@ body{
    font-family: 'Montserrat', sans-serif;
    
 }  
-*{
-   box-sizing: border-box;
-}
-   
-:root{
-   --skyblue:#2596be;
-   --grey:#666;
-   --light-grey:#555;
-   --black:#222;
-   --dark-black:#000;
-   --white:#fff;
-   
-}
-
 
 /* css animation */
 
@@ -353,4 +339,343 @@ body{
 }
 
 
+/* Media Queries */
 
+/* 1280px */
+@media (max-width: 1280px) {
+  .about {
+     padding: 5rem 10rem;
+     gap: 2rem;
+  }
+
+  .about-right {
+     height: auto;
+     padding-right: 1rem;
+  }
+
+  .about-blue,
+  .about-black {
+     font-size: 5rem;
+  }
+
+  .about-right p {
+     font-size: 1.6rem;
+  }
+
+  .tab button {
+     padding: 1.5rem 3rem;
+     font-size: 1.6rem;
+  }
+
+  .education-item,
+  .personal-icons,
+  .interests-list li {
+     font-size: 1.5rem;
+  }
+}
+
+/* 1024px */
+@media (max-width: 1024px) {
+  .about {
+     padding: 4rem 6rem;
+     flex-direction: column;
+     gap: 4rem;
+  }
+  .about-container{
+    gap: 3rem;
+  }
+
+  .about-left img {
+     width: 350px;
+     height: 450px;
+  }
+
+  .about-right {
+     height: auto;
+     padding-right: 1rem;
+  }
+
+  .about-blue,
+  .about-black {
+     font-size: 4rem;
+  }
+
+  .about-right p {
+     font-size: 1.4rem;
+  }
+
+  .tab button {
+     padding: 1.4rem 2.8rem;
+     font-size: 1.5rem;
+  }
+
+  .education-item,
+  .personal-icons,
+  .interests-list li {
+     font-size: 1.4rem;
+  }
+  
+}
+
+
+/* 800px */
+@media (max-width: 800px) {
+  .about {
+     padding: 5rem 1rem 3rem 1rem;
+     flex-direction: column;
+     /* gap: 1rem; */
+     height: auto;
+  }
+
+  .about-left {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+  }
+
+  .image-border {
+    width: 270px; 
+    height: 340px; 
+    position: relative; 
+  }
+  
+  .image-border:after {
+    width: 260px; 
+    height: 330px; 
+  }
+  
+  .image-border .main-image {
+    width: 260px; 
+    height: 330px; 
+    background-size: cover; 
+    background-position: center;
+  }
+
+  .about-right {
+     width: 100%;
+     padding-right: 0;
+     text-align: center;
+  }
+
+  .about-blue,
+  .about-black {
+     font-size: 3rem;
+     line-height: 1.2;
+  }
+
+  .about-right p {
+     font-size: 1.3rem;
+     line-height: 1.5;
+     text-align: start;
+    /* padding: 0rem rem; */
+  }
+  
+
+  .tab-container {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+  }
+  .tabcontent h1{
+    margin: 0px;
+  }
+  .tab button {
+     padding: 1rem 2rem;
+     font-size: 1.4rem;
+     margin: 0.5rem 0;
+  }
+
+  .tab button.active {
+     background-color: var(--dark-black);
+     color: var(--white);
+  }
+
+  .tabcontent {
+     padding: 1rem;
+  }
+
+  
+  .personal-icons{
+    padding: 4px;
+  }
+  .interests-list li {
+     font-size: 1.2rem;
+     line-height: 1.4;
+  }
+
+  .interests-list {
+     flex-direction: column;
+     align-items: center;
+     gap: 1rem;
+  }
+
+  .interests-icons {
+     text-align: center;
+  }
+
+  .interests-icons i {
+     font-size: 3rem;
+  }
+  .tabcontent{
+  padding: 0;
+  margin: 0;
+  }
+
+  .tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 0px 1px;
+  }
+  .title{
+    display: none;
+  }
+  .tab-wrapper{
+    margin: 0px;
+    padding: 0px;
+  }
+  .personal-icons{
+    padding: 3px;
+  }
+  
+
+  .interests{
+    display: flex;
+  }
+
+  .interests-list {
+    display: flex;
+    flex-direction: row; 
+    gap: 4rem; 
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  .interests-list{
+    margin-top: 2px;
+    padding-top: 2px;
+  }
+  .tabcontent h2{
+    font-size: 2.2rem;
+  }
+}
+
+
+
+
+
+/* 500px and below */
+@media (max-width: 500px) {
+  .about {
+    padding: 5rem 1rem 1rem 1rem;
+    align-items: center;
+  }
+ 
+  .interests-list{
+    margin-top: 2px;
+    padding-top: 2px;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .about-left {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+  }
+
+  .image-border {
+    width: 230px; 
+    height: 310px; 
+    position: relative; 
+  }
+  
+  .image-border:after {
+    width: 220px; 
+    height: 300px; 
+  }
+  
+  .image-border .main-image {
+    width: 220px;
+    height: 300px; 
+    background-size: cover; 
+    background-position: center;
+  }
+
+  .about-right {
+    width: 100%;
+    padding-right: 0;
+    /* text-align: center;  */
+  }
+
+  .about-blue{
+    font-size: 2.5rem; 
+  }
+  .about-black {
+    font-size: 2.5rem; 
+    text-align: center;
+    padding-left: 2rem;
+    
+  }
+
+  .about-right p {
+    font-size: 1.2rem; /* Adjust font size */
+    text-align: start;
+    padding: 0rem 2rem;
+  }
+
+  .tab button {
+    padding: 1rem 2rem; /* Adjust padding */
+    font-size: 1.2rem; /* Adjust font size */
+  }
+  .education-item {
+    padding:0rem 2rem 0.6rem 2rem;
+  }
+  .education-item h3{
+    text-align: start;
+  }
+  .education-year{
+    text-align: center;
+  }
+ 
+  .interests-list li {
+    font-size: 1.2rem; 
+  }
+ 
+  .tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+  }
+  
+  .personal-details{
+    padding: 0rem 2rem;
+  }
+
+  .interests{
+    display: flex;
+  }
+
+  .interests-list {
+    display: flex;
+    flex-direction: row; 
+    gap: 6rem; 
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  .title{
+    display: none;
+  }
+  .tabcontent{
+    padding: 0;
+    margin: 0;
+    }
+    .tabcontent h2{
+      font-size: 2rem;
+    }
+}

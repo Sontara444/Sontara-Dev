@@ -1,18 +1,19 @@
 import React from "react";
 import "./Hero.css";
 
-import hand_img from "../Assets/hand-icon.png";
-import linkedin_img from "../Assets/linkedin.png";
-import github_img from "../Assets/github.png";
-import lolipop_img from "../Assets/location.png";
-import html_img from "../Assets/html.png";
-import css_img from "../Assets/css.png";
-import javascript_img from "../Assets/javascript.png";
-import react_img from "../Assets/react.png";
-import sass_img from "../Assets/sass.png";
-import mongodb_img from "../Assets/mongodb.png";
-import nodejs_img from "../Assets/nodejs.png";
-import profile_img from "../Assets/profile.png";
+import hand_img from "../Assets/hand-icon-min.png";
+import linkedin_img from "../Assets/linkedin-min.png";
+import github_img from "../Assets/git-min.png";
+import lolipop_img from "../Assets/location-min.png";
+import html_img from "../Assets/html-min.png";
+import css_img from "../Assets/css-min.png";
+import javascript_img from "../Assets/javascript-min.png";
+import react_img from "../Assets/react-min.png";
+import sass_img from "../Assets/sass-min.png";
+import mongodb_img from "../Assets/mongodb-min.png";
+import nodejs_img from "../Assets/nodejs-min.png";
+import profile1_img from "../Assets/profile.webp";
+import profile2_img from "../Assets/profile-min.png";
 
 const Hero = () => {
   return (
@@ -44,7 +45,7 @@ const Hero = () => {
                   <img src={linkedin_img} alt="" target="_blank" />
                 </a>
                 <a href="https://github.com/Sontara444">
-                  <img src={github_img} alt="" target="_blank" />
+                  <img className="git" src={github_img} alt="" target="_blank" />
                 </a>
               </div>
               <div className="contact-btn">
@@ -75,7 +76,12 @@ const Hero = () => {
               </div>
           </div>
           <div className="hero-right">
-            <div className="blob">{/* <img src={profile_img} alt="" /> */}</div>
+            <picture>
+              <source srcSet={profile2_img} type="image/webp" />
+              <source srcSet={profile1_img} type="image/min" />
+              <img  className="blob" src={profile1_img} alt="" />
+              
+            </picture>
           </div>
         </div>
       </div>
