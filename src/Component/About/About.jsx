@@ -1,8 +1,6 @@
 import React from "react";
 import "./About.css";
-// import profile_img from "../Assets/profile.png";
-// import Contact from '../Contact/Contact'
-// import Work from "../Work/Work";
+import { assets } from "../Assets/assets";
 
 const About = () => {
   const openCity = (evt, cityName) => {
@@ -25,14 +23,12 @@ const About = () => {
       <div className="about">
         <div className="about-container">
           <div className="about-left">
-          <div className="image-border">
-            <div className="main-image"></div>
-            <p className="title">IMAGE HEADLINE</p>
+            <div className="image-border">
+              <div className="main-image">
+                {/* <img src={assets.profile_img} alt="" /> */}
+              </div>
+            </div>
           </div>
-            {/* <div className="blob"></div> */}
-            {/* <img src={profile_img} alt="" /> */}
-          </div>
-          
 
           <div className="about-right">
             <div className="about-heading">
@@ -41,35 +37,38 @@ const About = () => {
             </div>
 
             <p className="sub-head">
-              Frontend Web Developer building the Front-end of Websites and Web
-              Applications that leads to the success of the overall product.
-              Check out some of my work in the section Projects section.
+              I’m a <strong>Frontend Web Developer</strong> passionate about
+              building user-friendly and visually appealing websites and web
+              applications that contribute to a product's success. Check out
+              some of my work in the
+              <strong>Projects</strong> section.
             </p>
             <p className="sub-head">
-              I also like sharing content related to the stuff that I have
-              learned over the years in <strong>Web Development </strong> so it
-              can help other people of the Dev Community.{" "}
+              I also enjoy sharing insights and experiences from my journey in
+              <strong> Web Development</strong> to help others in the developer
+              community. Connect with me on
               <a
                 href="https://www.linkedin.com/in/sontararajput/"
                 className="linkedin"
               >
-                Linkedin
-              </a>{" "}
-              where I post useful content related to Web Development and
-              Programming.
+                  LinkedIn
+              </a>
+              , where I regularly post valuable content related to
+              <strong> Web Development</strong> and <strong>Programming</strong>
+              .
             </p>
 
             <div className="tab-container">
               <div className="tab">
                 <button
                   onClick={(event) => openCity(event, "London")}
-                  className="tablinks "
+                  className="tablinks active"
                 >
                   Education
                 </button>
                 <button
                   onClick={(event) => openCity(event, "Paris")}
-                  className="tablinks"
+                  className="tablinks "
                 >
                   Personal
                 </button>
@@ -109,7 +108,7 @@ const About = () => {
                       <i className="fa-solid fa-user"></i>
                       <div className="personal-item">
                         <h3>Name : </h3>
-                        <p>Sontara</p>
+                        <p>Sontara Rajput</p>
                       </div>
                     </div>
 
@@ -140,7 +139,7 @@ const About = () => {
                       </div>
                       <div className="interests-icons">
                         <i className="fa-solid fa-code"></i>
-                        <li>Code</li>
+                        <li>Coding</li>
                       </div>
                       <div className="interests-icons">
                         <i className="fa-solid fa-utensils"></i>
@@ -152,7 +151,7 @@ const About = () => {
                       </div>
                       <div className="interests-icons">
                         <i className="fa-solid fa-palette"></i>
-                        <li>Paint</li>
+                        <li>Painting</li>
                       </div>
                     </ul>
                   </div>
@@ -165,7 +164,6 @@ const About = () => {
       {/* <Work/> */}
       {/* <Contact/> */}
     </>
-    
   );
 };
 
