@@ -1,0 +1,80 @@
+:root {
+    --skyblue: #2596be;
+    --grey: #666;
+    --light-grey: #555;
+    --black: #222;
+    --dark-black: #000;
+    --white: #fff;
+  }
+
+.services{
+    padding: 3rem 20rem;
+    background: var(--skyblue-gradient);
+    height: 35vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-two{
+    padding: 5rem 8rem 2rem 8rem;
+    background: var(--skyblue-gradient-light);
+    height: 45vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.services-header h2{
+    text-align: center;
+    font-size: 30px;
+    color: var(--white);
+    line-height: 3rem;
+}
+
+.services-container{
+    margin: 5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-container p{
+    font-size: 18px;
+    color: var(--white);
+    line-height: 3rem;
+    place-items: center;
+    text-align: center;
+}
+
+@media(max-width:1024px){
+    .services{
+        padding: 5rem 14rem 2rem 14rem;
+        height:35vh;
+        
+    }
+    .contact-two{
+        padding: 4rem 8rem 1rem 8rem;
+        height: 35vh;
+   }
+}
+
+@media(max-width:800px){
+    .services{
+        padding: 5rem 10rem 2rem 10rem;
+        height:25vh;
+        font-size: 14px;
+    }
+    .contact-two{
+        padding: 4rem 8rem 1rem 8rem;
+        height: 30vh;
+   }
+   .services-container{
+    margin: 2rem auto;
+    line-height: 1rem;
+   }
+}

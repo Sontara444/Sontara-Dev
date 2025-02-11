@@ -1,0 +1,8 @@
+:root{
+    --red:#d01c28;
+    --gray: #2e2e2e;
+    --purple:rgb(124, 18, 200);
+    --grey:#222;
+    --white:#fff
+}
+/* background: var(--red); */
