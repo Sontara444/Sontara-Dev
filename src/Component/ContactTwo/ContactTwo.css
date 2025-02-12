@@ -12,7 +12,8 @@
 
 .contact-two{
     padding: 5rem 16rem 2rem 16rem;
-    background: var(--skyblue-gradient-light);
+    background: #000;
+    /* background: var(--skyblue-gradient-light); */
     height: 45vh;
     overflow: hidden;
     display: flex;

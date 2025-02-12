@@ -1,24 +1,15 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
 html{
     scroll-behavior: smooth;
 }
 body{
     font-family: 'Karla', sans-serif;
 }
-/* light mode */
-:root {
-    --skyblue: #2596be;
-    --grey: #666;
-    --light-grey: #555;
-    --black: #222;
-    --dark-black: #000;
-    --white: #fff;
-    --dark-grey: #333;
-  }
-
 
 .hero{
+    height: 96vh;
+    width: 90%;
+    margin: 0rem auto;
     padding: 20rem 20rem 12rem 20rem;
 }
 
@@ -31,7 +22,6 @@ body{
 
 .hero-left{
     width: 100%;
-    align-items: center;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -47,7 +37,6 @@ body{
     display: flex;
     justify-content: end;
     line-height: 1.1;
-    padding-right: 40px;
 }
 
 .header{
@@ -323,7 +312,6 @@ body{
     
     .skills{
         margin: 30 20px 0px 20px ;
-        /* margin-top: 3rem; */
     }
     
     .tech-content h3{
@@ -356,7 +344,6 @@ body{
         height: 60px;
     }
     .blob{
-        /* background-image: url(http://localhost:3000/static/media/profile.fa3475ee82cf1b16ce6e.png); */
         width: 200px;
         height: 200px;
         background-size: cover;

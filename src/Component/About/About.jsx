@@ -23,10 +23,14 @@ const About = () => {
       <div className="about">
         <div className="about-container">
           <div className="about-left">
-            <div className="image-border">
-              <div className="main-image">
-                {/* <img src={assets.profile_img} alt="" /> */}
-              </div>
+            <div
+              className="image-border"
+              style={{ backgroundImage: `url(${assets.profile_img})` }}
+            >
+              <div
+                className="main-image"
+                style={{ backgroundImage: `url(${assets.profile_img})` }}
+              ></div>
             </div>
           </div>
 
@@ -51,7 +55,7 @@ const About = () => {
                 href="https://www.linkedin.com/in/sontararajput/"
                 className="linkedin"
               >
-                  LinkedIn
+                LinkedIn
               </a>
               , where I regularly post valuable content related to
               <strong> Web Development</strong> and <strong>Programming</strong>
@@ -83,7 +87,7 @@ const About = () => {
                 <div id="London" className="tabcontent active">
                   <h2 className="active">Education</h2>
                   <div className="education-details">
-                    <div className="education-item">
+                    <div className="education-item ">
                       <h3>Delhi University - PGDAV College </h3>
                       <p>Bachelor of Commerce </p>
                       <div className="education-year">

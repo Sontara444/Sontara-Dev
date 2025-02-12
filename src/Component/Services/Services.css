@@ -1,25 +1,20 @@
-:root {
-    --skyblue: #2596be;
-    --grey: #666;
-    --light-grey: #555;
-    --black: #222;
-    --dark-black: #000;
-    --white: #fff;
-  }
+
 
 .services{
     padding: 5rem 16rem 2rem 16rem;
-    background: var(--skyblue-gradient);
+    /* background: var(--skyblue-gradient); */
     height: 45vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #0a0a0a;
+    color: white;
 }
 .contact-two{
     padding: 5rem 8rem 2rem 8rem;
-    background: var(--skyblue-gradient-light);
+    /* background: var(--skyblue-gradient-light); */
     height: 45vh;
     overflow: hidden;
     display: flex;
