@@ -8,6 +8,7 @@ import food_img from './food-website_img.png'
 import ageCalculator_img from './ageCalculator_img.png'
 import profile_img from './profile.png'
 import blue_img from './backgroundBlue_img.jpg'
+import black_img from './backgroundBlack_img.jpg'
 
 export const assets = {
     shopper_img,
@@ -19,6 +20,7 @@ export const assets = {
     ageCalculator_img,
     profile_img,
     blue_img,
-    shopper2_img
+    shopper2_img,
+    black_img
 
 }

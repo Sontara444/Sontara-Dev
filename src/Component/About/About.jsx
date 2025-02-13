@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import { assets } from "../Assets/assets";
+import Expertise from "../Expertise/Expertise";
 
 const About = () => {
   const openCity = (evt, cityName) => {
@@ -165,6 +166,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Expertise/>
       {/* <Work/> */}
       {/* <Contact/> */}
     </>
