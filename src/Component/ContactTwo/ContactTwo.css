@@ -1,5 +1,3 @@
-
-
 .contact-two {
     color: #000;
     height: 45vh;
@@ -37,41 +35,20 @@
 .contact-two-container p {
     font-size: 18px;
     line-height: 3rem;
-    font-weight: 600;
+    font-weight: 400;
     width: 100%;
     max-width: 600px;
 }
 
-/* .contact-two-button {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+
+
 .contact-two-button a {
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--skyblue);
-    text-decoration: none;
-    cursor: pointer;
-    padding: 0;
-    display: inline-block;
-    transition: color 0.3s ease-in-out;
-}
-
-.contact-two-button a:hover {
-    color: var(--black);
-    text-decoration: underline;
-} */
-
-
-.contact-two-button {
     text-decoration: none;
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--skyblue);
     text-decoration: none;
     display: inline-block;
-    padding: 0.5rem 0;
     position: relative;
     transition: color 0.3s ease-in-out;
   }
@@ -87,8 +64,8 @@
     transform-origin: left;
   }
   
-  .contact-two-button:hover {
-    color: var(--black);
+  .contact-two-button a:hover {
+    color: var(--dark-black);
   }
   
   .contact-two-button:hover::after {

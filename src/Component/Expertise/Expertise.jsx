@@ -5,41 +5,49 @@ const Expertise = () => {
   return (
     <section className="expertise">
       <div className="expertise-wrapper">
-        <h3 className="expertise-subtitle">Why choose me</h3>
-        <h2 className="expertise-title">My Expertise Area</h2>
+        <h2 className="expertise-title">Skills</h2>
+        <p className="expertise-description">
+        Building responsive and user-friendly web applications with modern technologies.
+        </p>
 
         <div className="expertise-container">
-          {/* Skills Section */}
-          <div className="expertise-skills">
-            <h3 className="expertise-heading">My Skills</h3>
+          <div className="expertise-column">
             {[
-              { name: "HTML, CSS, JavaScript", percent: 85, className: "html" },
-              { name: "ReactJS, NextJS, Redux", percent: 90, className: "react" },
-              { name: "NodeJS, Express", percent: 85, className: "node" },
-              { name: "MongoDB, Mongoose", percent: 90, className: "mongo" }
+              { name: "HTML5, CSS3, JavaScript", percent: 95 },
+              { name: "React.js, Redux", percent: 90 },
+              { name: "React Hooks", percent: 95 },
+              { name: "TailwindCSS, Figma", percent: 80 },
             ].map((skill, index) => (
               <div key={index} className="expertise-skill">
-                <span>{skill.name} <span>{skill.percent}%</span></span>
+                <span>
+                  {skill.name} <span>{skill.percent}%</span>
+                </span>
                 <div className="expertise-progress">
-                  <div className={`expertise-bar expertise-${skill.className}`}></div>
+                  <div
+                    className="expertise-bar"
+                    style={{ width: `${skill.percent}%` }}
+                  ></div>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* What I Do Section */}
-          <div className="expertise-what-i-do">
-            <h3 className="expertise-heading">What I Do</h3>
+          <div className="expertise-column">
             {[
-              { name: "Front-end Development", percent: 95, className: "frontend" },
-              { name: "Backend Development", percent: 90, className: "backend" },
-              { name: "Web Design", percent: 85, className: "webdesign" },
-              { name: "SEO", percent: 80, className: "seo" }
-            ].map((work, index) => (
+              { name: "MongoDB, Mongoose", percent: 95 },
+              { name: "Node.js, Express.js", percent: 80 },
+              { name: "Netlify & Vercel", percent: 95 },
+              { name: "Git, GitHub Actions", percent: 90 },
+            ].map((skill, index) => (
               <div key={index} className="expertise-skill">
-                <span>{work.name} <span>{work.percent}%</span></span>
+                <span>
+                  {skill.name} <span>{skill.percent}%</span>
+                </span>
                 <div className="expertise-progress">
-                  <div className={`expertise-bar expertise-${work.className}`}></div>
+                  <div
+                    className="expertise-bar"
+                    style={{ width: `${skill.percent}%` }}
+                  ></div>
                 </div>
               </div>
             ))}

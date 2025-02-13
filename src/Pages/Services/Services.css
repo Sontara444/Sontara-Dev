@@ -1,0 +1,121 @@
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 8rem;
+    background-color: #f8f9fa;
+  }
+  
+  .services-content {
+    width: 55%;
+  }
+  
+  .services-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+  
+  .services-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .service-category {
+    width: 45%;
+  }
+  
+  .service-category h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    color: #222;
+  }
+  
+  .service-category ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .service-category ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.2rem;
+  }
+  
+  .service-category ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #888;
+    font-size: 1.2rem;
+  }
+  
+  .services-image {
+    width: 40%;
+  }
+  
+  .services-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 1024px) {
+    .services-container {
+      flex-direction: column;
+      padding: 4rem;
+    }
+  
+    .services-content {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .services-list {
+      justify-content: center;
+    }
+  
+    .service-category {
+      width: 100%;
+      text-align: left;
+    }
+  
+    .services-image {
+      width: 80%;
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .services-title {
+      font-size: 2rem;
+    }
+  
+    .services-content {
+      text-align: left;
+    }
+  
+    .services-list {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .services-image {
+      width: 100%;
+    }
+  }
+  

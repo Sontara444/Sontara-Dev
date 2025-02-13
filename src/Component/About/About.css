@@ -61,6 +61,7 @@
    left: 0;
    transform: scale3d(0, 1, 1);
    transition: .5s cubic-bezier(.5, .03, .41, 1);
+   
  }
  
 
@@ -115,8 +116,8 @@
 .about-blue{
    color: var(--skyblue);
    font-weight: 700;
-   font-size: 6rem;
-   font-family: 'Rubik Doodle Shadow', system-ui;
+   font-size: 8rem;
+   font-family: "Tangerine", serif;
 
 }
 .about-heading{
@@ -132,10 +133,8 @@
 }
 .about-right p{
    color: var(--grey);
-   font-size: 1.8rem;
-   font-weight: 400;
-   line-height: 2rem;
-   line-height: 2.4rem;
+   font-size: 1.6rem;
+   line-height: 2.6rem;
 
 }
 .tab-container{
@@ -148,7 +147,6 @@
 
 
  .tab button {
-    /* margin: 2px 0px; */
     transition: 0.3s;
     background-color: rgb(255, 255, 255);
     border-radius: 8px;

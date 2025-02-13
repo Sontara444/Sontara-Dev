@@ -1,6 +1,5 @@
 import React from 'react'
 import './Contact.css'
-// import { FaPhoneAlt } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -9,13 +8,9 @@ const Contact = () => {
      <section className="contact" id="contact-footer" >
      <h2 className="contact-head">Contact</h2>
      <span><p className="contact-sub-head">Get In Touch!</p></span>
-     {/* <span><p className="contact-sub-head">Feel free to Contact me by submitting the form below and i will get back to you as soon as possible.</p></span> */}
      
       <div className="contact-container container">
-        
-         <div className="contact-left">
-          
-         </div>
+       
      
       <div className="form-container">
         <form action="https://formspree.io/f/xbjnjqyn" className="contact-form" method="POST">
@@ -36,6 +31,7 @@ const Contact = () => {
             <button className="contact-button btn " value="send" type="submit">Submit</button>
         </form>
       </div>
+      
     </div>
     
     </section>

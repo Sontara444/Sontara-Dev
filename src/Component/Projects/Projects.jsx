@@ -21,7 +21,7 @@ const Projects = () => {
               <h1 className="project-title">{item.title}</h1>
               <p className="project-description">{item.description}</p>
               <a href={item.link} className="project-link" target="_blank" rel="noopener noreferrer">
-                View Project
+                View Project <img src={item.arrow_icon} alt="" />
               </a>
             </div>
           </div>

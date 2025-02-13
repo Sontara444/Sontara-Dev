@@ -11,9 +11,9 @@ const ContactTwo = () => {
         <div className="contact-two-container">
           <div className="contact-two-content">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-              eius unde impedit at nemo! A similique consequuntur molestias
-              dolorum rerum!
+              Passionate about building exceptional digital experiences. Let’s
+              work together to create something amazing. Reach out and let’s get
+              started!
             </p>
           </div>
         </div>

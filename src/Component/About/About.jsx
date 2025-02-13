@@ -167,8 +167,6 @@ const About = () => {
         </div>
       </div>
       <Expertise/>
-      {/* <Work/> */}
-      {/* <Contact/> */}
     </>
   );
 };

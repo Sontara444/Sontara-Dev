@@ -1,19 +1,7 @@
 import React from "react";
 import "./Hero.css";
 
-import hand_img from "../Assets/hand-icon-min.png";
-import linkedin_img from "../Assets/linkedin-min.png";
-import github_img from "../Assets/git-min.png";
-import lolipop_img from "../Assets/location-min.png";
-import html_img from "../Assets/html-min.png";
-import css_img from "../Assets/css-min.png";
-import javascript_img from "../Assets/javascript-min.png";
-import react_img from "../Assets/react-min.png";
-import sass_img from "../Assets/sass-min.png";
-import mongodb_img from "../Assets/mongodb-min.png";
-import nodejs_img from "../Assets/nodejs-min.png";
-import profile1_img from "../Assets/profile.webp";
-import profile2_img from "../Assets/profile-min.png";
+import { assets } from "../Assets/assets";
 
 const Hero = () => {
   return (
@@ -28,7 +16,7 @@ const Hero = () => {
                 DEVELOPER
                 <span>
                   {" "}
-                  <img src={hand_img} alt=" " />
+                  <img src={assets.hand_img} alt=" " />
                 </span>
               </h2>
 
@@ -36,16 +24,21 @@ const Hero = () => {
                 Hi, I'm Sontara Rajput. A passionate Front-end React Developer
                 based in india.{" "}
                 <span className="lolipop">
-                  <img src={lolipop_img} alt="" />
+                  <img src={assets.lolipop_img} alt="" />
                 </span>
               </p>
 
               <div className="social-icons">
                 <a href="https://www.linkedin.com/in/sontararajput/">
-                  <img src={linkedin_img} alt="" target="_blank" />
+                  <img src={assets.linkedin_img} alt="" target="_blank" />
                 </a>
                 <a href="https://github.com/Sontara444">
-                  <img className="git" src={github_img} alt="" target="_blank" />
+                  <img
+                    className="git"
+                    src={assets.github_img}
+                    alt=""
+                    target="_blank"
+                  />
                 </a>
               </div>
               <div className="contact-btn">
@@ -56,31 +49,34 @@ const Hero = () => {
                   <a href="/contact">Contact Me</a>
                 </div>
               </div>
-             
             </div>
             <div className="skills">
-                <div className="tech-content">
-                  <h3>
-                    Tech Slack <span className="line"></span>
-                  </h3>
-                </div>
-                <div className="skills-icon">
-                  <img src={html_img} alt="" />
-                  <img src={css_img} alt="" />
-                  <img src={javascript_img} alt="" />
-                  <img src={react_img} alt="" />
-                  <img src={sass_img} alt="" />
-                  <img src={mongodb_img} alt="" />
-                  <img src={nodejs_img} alt="" />
-                </div>
+              <div className="tech-content">
+                <h3>
+                  Tech Slack <span className="line"></span>
+                </h3>
               </div>
+              <div className="skills-icon">
+                <img src={assets.html_img} alt="HTML" />
+                <img src={assets.css_img} alt="CSS" />
+                <img src={assets.javascript_img} alt="JavaScript" />
+                <img src={assets.react_img} alt="React.js" />
+
+                <img src={assets.mongodb_img} alt="MongoDB" />
+                <img src={assets.express_img} alt="Express.js" />
+                <img src={assets.nodejs_img} alt="Node.js" />
+                <img src={assets.react_img} alt="React.js" />
+
+                <img src={assets.sass_img} alt="Sass" />
+                <img src={assets.git_img} alt="Git" />
+              </div>
+            </div>
           </div>
           <div className="hero-right">
             <picture>
-              <source srcSet={profile2_img} type="image/webp" />
-              <source srcSet={profile1_img} type="image/min" />
-              <img  className="blob" src={profile1_img} alt="" />
-              
+              <source srcSet={assets.profile2_img} type="image/webp" />
+              <source srcSet={assets.profile1_img} type="image/min" />
+              <img className="blob" src={assets.profile1_img} alt="" />
             </picture>
           </div>
         </div>

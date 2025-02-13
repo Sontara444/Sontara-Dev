@@ -1,97 +1,62 @@
-:root {
-  --grey: #666;
-  --black: #222;
-  --dark-black: #000;
-  --light-grey: #ddd; /* Added a lighter grey for subtle contrast */
-}
 
 .expertise {
   background: #fff;
   text-align: center;
   padding: 80px 20px;
-  
-  
 }
 
 .expertise-wrapper {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.expertise-subtitle {
-  color: var(--skyblue);
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 12px;
+  width: 90%; 
+  margin: auto;
 }
 
 .expertise-title {
-  
-  margin-bottom: 60px;
-  color: var(--dark-black);
-  font-weight: 700;
-  font-size: 6rem;
-  font-family: 'Rubik Doodle Shadow', system-ui;
-  text-transform: uppercase;
-  
+  color: var(--black);
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.expertise-description {
+  color: var(--grey);
+  font-size: 16px;
+  margin-bottom: 50px;
 }
 
 .expertise-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 80px;
-  max-width: 1000px;
+  max-width: 1400px; /* Increased max-width */
   margin: auto;
   text-align: left;
 }
 
-.expertise-skills,
-.expertise-what-i-do {
-  width: 45%;
-  min-width: 450px;
-}
-
-.expertise-heading {
-  color: var(--skyblue);
-  font-size: 40px;
-  font-weight: bold;
-  margin-bottom: 40px;
+.expertise-column {
+  width:48%; /* Slightly increased width */
 }
 
 .expertise-skill {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .expertise-skill span {
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
-  color: var(--black);
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--grey);
 }
 
 .expertise-progress {
   width: 100%;
-  height: 18px;
+  height: 12px; /* Increased height */
   background: var(--light-grey);
-  margin-top: 10px;
+  margin-top: 8px;
   overflow: hidden;
 }
 
 .expertise-bar {
   height: 100%;
-  background: var(--black);
+  background: var(--primary-color);
 }
-
-/* Progress Bar Widths */
-.expertise-html { width: 85%; }
-.expertise-react { width: 90%; }
-.expertise-node { width: 85%; }
-.expertise-mongo { width: 90%; }
-.expertise-frontend { width: 95%; }
-.expertise-backend { width: 90%; }
-.expertise-webdesign { width: 85%; }
-.expertise-seo { width: 80%; }

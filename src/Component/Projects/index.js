@@ -10,6 +10,7 @@ const projectData = [
     img: assets.shopper2_img,
     link: "https://shopping-mania-one.vercel.app/",
     color: "yellow",
+    arrow_icon: assets.arrow_img
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const projectData = [
     img: assets.ticket_booking_img,
     link: "https://movie-ticket-booking-app01.netlify.app/",
     color: "red",
+    arrow_icon: assets.arrow_img
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const projectData = [
     img: assets.weather_img,
     link: "https://my-app-weather22.netlify.app/",
     color: "blue",
+    arrow_icon: assets.arrow_img
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ const projectData = [
     img: assets.ageCalculator_img,
     link: "https://age-calcy-11.netlify.app/",
     color: "green",
+    arrow_icon: assets.arrow_img
   },
   {
     id: 5,
@@ -50,6 +54,7 @@ const projectData = [
     img: assets.food_img,
     link: "https://sr-project2.netlify.app/",
     color: "purple",
+    arrow_icon: assets.arrow_img
   },
   {
     id: 6,
@@ -60,6 +65,7 @@ const projectData = [
     img: assets.todo_img,
     link: "https://set-task-list.netlify.app/",
     color: "seagreen",
+    arrow_icon: assets.arrow_img
   },
   // {
   //   id: 7,
