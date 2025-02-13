@@ -9,6 +9,8 @@ import ageCalculator_img from './ageCalculator_img.png'
 import profile_img from './profile.png'
 import blue_img from './backgroundBlue_img.jpg'
 import black_img from './backgroundBlack_img.jpg'
+import leaf_img from './leaf_img.png'
+import leaf1_img from './leaf1_img.png'
 
 export const assets = {
     shopper_img,
@@ -21,6 +23,8 @@ export const assets = {
     profile_img,
     blue_img,
     shopper2_img,
-    black_img
+    black_img,
+    leaf_img,
+    leaf1_img,
 
 }

@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  /* background: url("./Component/Assets/leaf1_img.png") no-repeat center; */
 }
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap");
 
@@ -14,11 +15,19 @@ html {
 :root {
   --skyblue: #2596be;
   --grey: #666;
+  --light-grey: #555;
   --black: #222;
   --dark-black: #000;
+  --white: #fff;
+  --light-bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
 }
+
+
 
 body {
   font-family: "Karla", sans-serif;
+  
 }
 

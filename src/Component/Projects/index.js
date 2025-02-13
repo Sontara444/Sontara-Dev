@@ -61,6 +61,46 @@ const projectData = [
     link: "https://set-task-list.netlify.app/",
     color: "seagreen",
   },
+  // {
+  //   id: 7,
+  //   title: "To-Do List",
+  //   highlight: "Productivity",
+  //   description:
+  //     "A simple and effective to-do list app to manage daily tasks and boost productivity with an intuitive user interface.",
+  //   img: assets.todo_img,
+  //   link: "https://set-task-list.netlify.app/",
+  //   color: "seagreen",
+  // },
+  // {
+  //   id: 8,
+  //   title: "To-Do List",
+  //   highlight: "Productivity",
+  //   description:
+  //     "A simple and effective to-do list app to manage daily tasks and boost productivity with an intuitive user interface.",
+  //   img: assets.todo_img,
+  //   link: "https://set-task-list.netlify.app/",
+  //   color: "seagreen",
+  // },
+  // {
+  //   id: 9,
+  //   title: "To-Do List",
+  //   highlight: "Productivity",
+  //   description:
+  //     "A simple and effective to-do list app to manage daily tasks and boost productivity with an intuitive user interface.",
+  //   img: assets.todo_img,
+  //   link: "https://set-task-list.netlify.app/",
+  //   color: "seagreen",
+  // },
+  // {
+  //   id: 10,
+  //   title: "To-Do List",
+  //   highlight: "Productivity",
+  //   description:
+  //     "A simple and effective to-do list app to manage daily tasks and boost productivity with an intuitive user interface.",
+  //   img: assets.todo_img,
+  //   link: "https://set-task-list.netlify.app/",
+  //   color: "seagreen",
+  // },
   
 ];
 
