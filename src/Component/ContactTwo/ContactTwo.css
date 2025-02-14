@@ -1,99 +1,74 @@
 .contact-two {
-    color: #000;
-    height: 45vh;
+    color: var(--black);
+    height: 50vh;
     width: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url("../Assets/leaf1_img.png") no-repeat center center;
-    background-size: cover;
-    background: #F3F3F3;
+    background: linear-gradient(135deg, var(--light-bg) 30%, var(--light-grey) 100%);
+    padding: 5rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    border-radius: 10px;
 }
 
 .contact-two-header {
-    width: 100%;
-    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .contact-two-header h2 {
-    font-size: 42px;
-    line-height: 3rem;
-    font-weight: 600;
-}
-
-.contact-two-container {
-    width: 100%;
-    margin: 5rem auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact-two-container p {
-    font-size: 18px;
-    line-height: 3rem;
-    font-weight: 200;
-    width: 100%;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    font-weight: 300;
     max-width: 600px;
     color: var(--grey);
+    margin-bottom: 2rem;
 }
-
-
 
 .contact-two-button a {
     text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--skyblue);
-    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white);
+    background: var(--primary-color);
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
     display: inline-block;
-    position: relative;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .contact-two-button::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background: var(--skyblue);
-    transition: transform 0.3s ease-in-out;
-    transform: scaleX(0);
-    transform-origin: left;
-  }
-  
-  .contact-two-button a:hover {
-    color: var(--dark-black);
-  }
-  
-  .contact-two-button:hover::after {
-    transform: scaleX(1);
-  }
+}
 
+.contact-two-button a:hover {
+    background: var(--dark-black);
+    color: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
 
-
-/* Responsive Design */
 @media (max-width: 768px) {
     .contact-two {
         height: auto;
         padding: 4rem 2rem;
     }
-    
     .contact-two-header h2 {
-        font-size: 32px;
+        font-size: 2.5rem;
     }
-    
     .contact-two-container p {
-        font-size: 16px;
-        line-height: 2.5rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
-
     .contact-two-button a {
-        padding: 1.5rem 3rem;
-        font-size: 1.6rem;
+        padding: 0.8rem 2rem;
+        font-size: 1.4rem;
     }
 }

@@ -7,6 +7,7 @@ const Projects = () => {
   const visibleProjects = showAll ? projectData : projectData.slice(0, 4);
 
   return (
+    <section className="projects">
     <div className="project-section">
       <p className="section-subtitle">My Portfolio</p>
       <h3 className="section-title">Recent Works</h3>
@@ -28,13 +29,13 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Explore More Button */}
       <div className="explore-button-container">
         <button className="explore-btn" onClick={() => setShowAll(!showAll)}>
           {showAll ? "Show Less" : "Explore More"}
         </button>
       </div>
     </div>
+    </section>
   );
 };
 

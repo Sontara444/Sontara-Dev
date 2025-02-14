@@ -82,7 +82,7 @@ body{
 .skills{
     display: flex;
     align-items: start;
-    margin-top: 8rem;
+    margin-top: 6rem;
     gap:10px;
 }
 .tech-content{
@@ -118,7 +118,7 @@ body{
     display: flex;
     align-items: center;
     gap: 24px;
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 .hero-button a{

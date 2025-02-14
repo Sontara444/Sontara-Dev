@@ -27,6 +27,7 @@ import git_img from "./git_img.png";
 import bg_img from "./common-bg.svg";
 import arrow_img from "./arrow_img.png";
 import trophy_img from "./trophy_img.png";
+import trophy2_img from "./trophy2_img.png";
 import sand_img from "./sand_img.png";
 import laptop_img from "./laptop_img.png";
 import code_img from "./code_img.png"
@@ -61,6 +62,7 @@ export const assets = {
   bg_img,
   arrow_img,
   trophy_img,
+  trophy2_img,
   sand_img,
   laptop_img,
   code_img,
