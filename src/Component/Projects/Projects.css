@@ -1,4 +1,3 @@
-
 .project-section {
   width: 80%;
   padding: 8rem 0;
@@ -33,13 +32,11 @@
   gap: 4rem;
 }
 
-/* Project Card Styling */
 .project-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: var(--card-bg);
-  border-radius: 12px;
   padding: 3rem;
   box-shadow: 0 8px 20px var(--shadow-color);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -62,15 +59,10 @@
 
 .project-image img {
   width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px var(--shadow-color);
-  transition: transform 0.3s ease;
-}
-
-.project-image:hover img {
-  transform: scale(1.02);
+  max-width: 700px;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px var(--shadow-color);
 }
 
 .project-content {
@@ -104,55 +96,18 @@
 .project-link {
   font-size: 1.8rem;
   font-weight: bold;
-  color: var(--skyblue);
+  color: var(--dark-black);
   text-decoration: none;
-  display: inline-block;
-  padding: 0.5rem 0;
-  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
   transition: color 0.3s ease-in-out;
-}
-
-.project-link::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: var(--skyblue);
-  transition: transform 0.3s ease-in-out;
-  transform: scaleX(0);
-  transform-origin: left;
 }
 
 .project-link:hover {
   color: var(--black);
-}
-
-.project-link:hover::after {
-  transform: scaleX(1);
-}
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .project-card {
-    width: 100%;
-  }
-}
-
-
-.project-image img {
-  width: 100%;
-  max-width: 700px; /* Ensures consistent width */
-  height: 350px; /* Fixed height for uniform size */
-  object-fit: cover; /* Ensures the image maintains aspect ratio and fills the container */
-  border-radius: 12px;
-  box-shadow: 0 8px 20px var(--shadow-color);
-  transition: transform 0.3s ease-in-out;
-}
-
-.project-image:hover img {
-  transform: scale(1.05);
 }
 
 .explore-button-container {
@@ -162,9 +117,6 @@
 
 .explore-btn {
   background-color: rgb(255, 255, 255);
-  height: 100%;
-  border-radius: 8px;
-  text-decoration: none;
   border: none;
   color: var(--dark-black);
   padding: 1.8rem 5rem;
@@ -177,27 +129,18 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Hover Effect */
 .explore-btn:hover {
   background-color: var(--dark-black);
   color: white;
-  border-color: var(--dark-black);
 }
 
-.project-link{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;  
-  justify-content: center;
-  gap: 8px;
-}
-
-/* Responsive for Smaller Screens */
 @media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
+
   .explore-btn {
-      padding: 1.5rem 4rem;
-      font-size: 1.6rem;
+    padding: 1.5rem 4rem;
+    font-size: 1.6rem;
   }
 }
-
-

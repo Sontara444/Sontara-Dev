@@ -26,6 +26,10 @@ import express_img from "./express_img.png";
 import git_img from "./git_img.png";
 import bg_img from "./common-bg.svg";
 import arrow_img from "./arrow_img.png";
+import trophy_img from "./trophy_img.png";
+import sand_img from "./sand_img.png";
+import laptop_img from "./laptop_img.png";
+import code_img from "./code_img.png"
 
 export const assets = {
   shopper_img,
@@ -55,5 +59,16 @@ export const assets = {
   express_img,
   git_img,
   bg_img,
-  arrow_img
+  arrow_img,
+  trophy_img,
+  sand_img,
+  laptop_img,
+  code_img,
 };
+
+// const stats = [
+//   { id: 1, icon: '💻', value: '20+', label: 'Completed Projects', color: 'var(--skyblue)' },
+//   { id: 2, icon: '👨‍💻', value: 'Full Stack', label: 'Developer', color: 'var(--grey)' },
+//   { id: 3, icon: '⏳', value: '2 Years+', label: 'Experience', color: 'var(--light-grey)' },
+//   { id: 4, icon: '💪', value: '50K+', label: 'Lines of Code', color: 'var(--black)' },
+// ];

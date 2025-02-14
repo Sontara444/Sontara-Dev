@@ -43,7 +43,7 @@ const Hero = () => {
               </div>
               <div className="contact-btn">
                 <div className="cv-btn hero-button">
-                  <a href="./cv/cv.pdf">Download cv</a>
+                  <a href="https://drive.google.com/file/d/1Mr8EwBwhCZ0953r--9CdHYhdWCGkKYfU/view?usp=sharing">Download cv</a>
                 </div>
                 <div className="contact-me-btn hero-button">
                   <a href="/contact">Contact Me</a>
