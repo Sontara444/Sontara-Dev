@@ -34,7 +34,7 @@ const Hero = () => {
                 </a>
                 <a href="https://github.com/Sontara444">
                   <img
-                    className="git"
+                    className="hero-git"
                     src={assets.github_img}
                     alt=""
                     target="_blank"

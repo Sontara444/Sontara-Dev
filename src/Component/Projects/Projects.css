@@ -1,5 +1,6 @@
 .projects {
   background: linear-gradient(135deg, var(--light-bg), #f2f7fa);
+  padding: 4rem 0;
 }
 
 .project-section {
@@ -11,27 +12,27 @@
 }
 
 .section-subtitle {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   color: var(--skyblue);
   margin-bottom: 1rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
   font-family: "Tangerine", serif;
 }
 
 .section-title {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 900;
   font-family: "Rubik", sans-serif;
   color: var(--black);
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
   text-transform: uppercase;
 }
 
 .project-card-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
   justify-content: center;
   padding: 0 2rem;
 }
@@ -39,7 +40,7 @@
 .project-card {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
-  padding: 2.2rem;
+  padding: 2rem;
   border-radius: 14px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
@@ -75,7 +76,7 @@
 }
 
 .project-type {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   color: var(--skyblue);
   font-weight: 600;
@@ -83,17 +84,17 @@
 }
 
 .project-title {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 700;
   font-family: "Space Grotesk", sans-serif;
   margin: 1rem 0;
 }
 
 .project-description {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.6em;
   color: var(--grey);
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.5rem;
   font-weight: 400;
 }
 
@@ -101,7 +102,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
   color: var(--skyblue);
   text-decoration: none;
@@ -130,7 +131,7 @@
 }
 
 .explore-btn {
-  margin: 2rem;
+  margin: 2rem auto;
   background: var(--dark-black);
   color: var(--white);
   padding: 14px 34px;
@@ -139,23 +140,50 @@
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.075) 0px 0.706592px 0.706592px -0.625px,
-              rgba(0, 0, 0, 0.07) 0px 1.80656px 1.80656px -1.25px,
-              rgba(0, 0, 0, 0.07) 0px 3.62176px 3.62176px -1.875px,
-              rgba(0, 0, 0, 0.063) 0px 6.8656px 6.8656px -2.5px,
-              rgba(0, 0, 0, 0.05) 0px 13.6468px 13.6468px -3.125px,
-              rgba(0, 0, 0, 0.024) 0px 30px 30px -3.75px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 4px 8px;
 }
 
 .explore-btn:hover {
   background: var(--white);
   color: var(--black);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
   border: none;
+}
 
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .project-section {
+    width: 90%;
+  }
+
+  .section-title {
+    font-size: 4rem;
+  }
+
+  .section-subtitle {
+    font-size: 2.2rem;
+  }
+
+  .project-card-box {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.8rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .section-title {
+    font-size: 3.5rem;
+  }
+
+  .section-subtitle {
+    font-size: 2rem;
+  }
+
+  .project-card-box {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
   .explore-btn {
     padding: 10px 24px;
     font-size: 1.4rem;
@@ -164,6 +192,19 @@
 }
 
 @media (max-width: 500px) {
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.8rem;
+  }
+
+  .project-card-box {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
   .explore-btn {
     padding: 8px 20px;
     font-size: 1.2rem;
@@ -172,4 +213,3 @@
     text-align: center;
   }
 }
-
