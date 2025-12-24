@@ -30,7 +30,10 @@ import trophy_img from "./trophy_img.png";
 import trophy2_img from "./trophy2_img.png";
 import sand_img from "./sand_img.png";
 import laptop_img from "./laptop_img.png";
-import code_img from "./code_img.png"
+import code_img from "./code_img.png";
+import chat_app_img from "./chat-app.png";
+import task_manager_img from "./task-manager.png";
+import mini_ai_app_img from "./ai-image.png";
 
 export const assets = {
   shopper_img,
@@ -66,6 +69,9 @@ export const assets = {
   sand_img,
   laptop_img,
   code_img,
+  chat_app_img,
+  task_manager_img,
+  mini_ai_app_img
 };
 
 // const stats = [
