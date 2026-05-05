@@ -22,7 +22,7 @@ const Hero = () => {
 
               <p>
                 Hi, I'm Sontara Rajput. A passionate Front-end React Developer
-                based in india.{" "}
+                based in India.{" "}
                 <span className="lolipop">
                   <img src={assets.lolipop_img} alt="" />
                 </span>
@@ -43,7 +43,7 @@ const Hero = () => {
               </div>
               <div className="contact-btn">
                 <div className="cv-btn hero-button">
-                  <a href="https://drive.google.com/file/d/1Mr8EwBwhCZ0953r--9CdHYhdWCGkKYfU/view?usp=sharing">Download cv</a>
+                  <a href="https://drive.google.com/file/d/1Mr8EwBwhCZ0953r--9CdHYhdWCGkKYfU/view?usp=sharing">Download CV</a>
                 </div>
                 <div className="contact-me-btn hero-button">
                   <a href="/contact">Contact Me</a>

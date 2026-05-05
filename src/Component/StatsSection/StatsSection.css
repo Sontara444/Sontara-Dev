@@ -1,44 +1,89 @@
 .stats-section {
-    padding: 3rem 0;
+    padding: 4rem 0;
     text-align: center;
-    background-color: #f3f4f6;
-    border-top: 1px solid #d1d5db; 
-    border-bottom: 1px solid #d1d5db; 
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0; 
+    border-bottom: 1px solid #e2e8f0; 
   }
   
   .container {
-    width: 88%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
   }
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2.5rem;
+    justify-items: center;
   }
   
   .stat-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    width: 100%;
   }
   
   .icon {
-    font-size: 3rem;
-     margin-bottom: 1rem;
-     color: var(--skyblue);
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1.2rem;
+    object-fit: contain;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .stat-item:hover .icon {
+    transform: translateY(-8px) scale(1.15);
   }
   
   .value {
-    font-size: 1.75rem;
-    font-weight: bold;
-    color: #1f2937;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+    font-family: 'Rubik', sans-serif;
   }
   
   .label {
-    color: #6b7280;
-    font-size: 12px;
+    color: #64748b;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .value {
+      font-size: 1.6rem;
+    }
+    .icon {
+      width: 3.2rem;
+      height: 3.2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .stat-item {
+      padding: 1rem;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .stat-item:last-child {
+      border-bottom: none;
+    }
+  }
+
   
