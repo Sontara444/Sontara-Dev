@@ -2,6 +2,28 @@ import { assets } from "../Assets/assets";
 
 const projectData = [
   {
+    id: 10,
+    title: "Shopfinyra E-Commerce",
+    highlight: "E-Commerce",
+    description:
+      "A modern e-commerce platform offering a seamless shopping experience with a clean and responsive design.",
+    img: assets.shopfinyra_img,
+    link: "https://shopfinyra.vercel.app/",
+    color: "purple",
+    arrow_icon: assets.arrow_img
+  },
+  {
+    id: 11,
+    title: "10 Minute Mail",
+    highlight: "Utility",
+    description:
+      "A fast and disposable 10-minute temporary email service to protect privacy and avoid spam.",
+    img: assets.mailcheap_img,
+    link: "https://www.mailcheap.io/10-minute-mail",
+    color: "blue",
+    arrow_icon: assets.arrow_img
+  },
+  {
     id: 1,
     title: "E-Commerce Website",
     highlight: "Shopper",
@@ -34,7 +56,7 @@ const projectData = [
     color: "yellow",
     arrow_icon: assets.arrow_img
   },
-  {
+  /* {
     id: 4,
     title: "Mini AI App",
     highlight: "App",
@@ -44,7 +66,7 @@ const projectData = [
     link: "https://mini-ai-app-client.vercel.app/",
     color: "red",
     arrow_icon: assets.arrow_img
-  },
+  }, */
   {
     id: 5,
     title: "Movie Ticket Booking",

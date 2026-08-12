@@ -34,6 +34,8 @@ import code_img from "./code_img.png";
 import chat_app_img from "./chat-app.png";
 import task_manager_img from "./task-manager.png";
 import mini_ai_app_img from "./ai-image.png";
+import shopfinyra_img from "./shopfinyra.png";
+import mailcheap_img from "./mailcheap.png";
 
 export const assets = {
   shopper_img,
@@ -71,7 +73,9 @@ export const assets = {
   code_img,
   chat_app_img,
   task_manager_img,
-  mini_ai_app_img
+  mini_ai_app_img,
+  shopfinyra_img,
+  mailcheap_img
 };
 
 // const stats = [
