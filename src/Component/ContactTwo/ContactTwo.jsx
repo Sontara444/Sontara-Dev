@@ -3,25 +3,17 @@ import "./ContactTwo.css";
 
 const ContactTwo = () => {
   return (
-    <>
-      <section className="contact-two">
-        <div className="contact-two-header">
-          <h2>Hire Me!</h2>
-        </div>
-        <div className="contact-two-container">
-          <div className="contact-two-content">
-            <p>
-              Passionate about building exceptional digital experiences. Let’s
-              work together to create something amazing. Reach out and let’s get
-              started!
-            </p>
-          </div>
-        </div>
-        <div className="contact-two-button">
-          <a href="/contact">CONTACT US</a>
-        </div>
-      </section>
-    </>
+    <section className="contact-two">
+      <div className="cta-content-wrapper">
+        <h2 className="cta-title">Ready to start your next project?</h2>
+        <p className="cta-description">
+          Let's build something exceptional together. Whether you have a specific idea in mind or need a technical partner to bring your vision to life, I'm just a click away!
+        </p>
+        <a href="/contact" className="cta-button">
+          Hire Me <i className="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
   );
 };
 

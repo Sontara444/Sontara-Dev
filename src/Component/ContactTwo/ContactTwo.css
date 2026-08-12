@@ -1,74 +1,83 @@
 .contact-two {
-    color: var(--black);
-    height: 50vh;
-    width: 100%;
+    position: relative;
+    padding: 10rem 2rem;
+    background: linear-gradient(135deg, #000428 0%, #004e92 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, var(--light-bg) 30%, var(--light-grey) 100%);
-    padding: 5rem 2rem;
     text-align: center;
-    box-shadow: 0 4px 10px var(--shadow-color);
-    border-radius: 10px;
+    color: #fff;
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 4rem 0;
 }
 
-.contact-two-header {
-    margin-bottom: 2rem;
+.cta-content-wrapper {
+    max-width: 800px;
+    z-index: 2;
 }
 
-.contact-two-header h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    text-transform: uppercase;
+.cta-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.contact-two-container p {
-    font-size: 1.4rem;
-    line-height: 2.2rem;
+.cta-description {
+    font-size: 1.8rem;
     font-weight: 300;
-    max-width: 600px;
-    color: var(--grey);
-    margin-bottom: 2rem;
+    max-width: 650px;
+    margin: 0 auto 4rem auto;
+    line-height: 1.7;
+    color: #e0e6ed;
 }
 
-.contact-two-button a {
-    text-decoration: none;
-    font-size: 1.6rem;
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 1.8rem;
     font-weight: 600;
-    color: var(--white);
-    background: var(--primary-color);
-    padding: 1rem 2.5rem;
-    border-radius: 30px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: #004e92;
+    background: #fff;
+    padding: 1.5rem 4rem;
+    border-radius: 50px;
+    text-decoration: none;
     transition: all 0.3s ease-in-out;
-    display: inline-block;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-.contact-two-button a:hover {
-    background: var(--dark-black);
-    color: var(--white);
-    transform: translateY(-3px);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+.cta-button i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    background: var(--skyblue, #00b4d8);
+    color: #fff;
+}
+
+.cta-button:hover i {
+    transform: translateX(5px);
 }
 
 @media (max-width: 768px) {
     .contact-two {
-        height: auto;
-        padding: 4rem 2rem;
+        padding: 6rem 2rem;
+        margin: 2rem 0;
     }
-    .contact-two-header h2 {
-        font-size: 2.5rem;
+    .cta-title {
+        font-size: 3.5rem;
     }
-    .contact-two-container p {
-        font-size: 1.2rem;
-        line-height: 2rem;
+    .cta-description {
+        font-size: 1.6rem;
     }
-    .contact-two-button a {
-        padding: 0.8rem 2rem;
-        font-size: 1.4rem;
+    .cta-button {
+        font-size: 1.6rem;
+        padding: 1.2rem 3rem;
     }
 }
