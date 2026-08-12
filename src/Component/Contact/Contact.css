@@ -9,12 +9,12 @@
 
 .form-container {
     background: #fff;
-    box-shadow: rgb(100 100 111 / 20%) 0 7px 29px 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     padding: 4rem;
     max-width: 80rem;
     text-align: right;
     width: 95%;
-    border-radius: 5px;
+    border-radius: 12px;
     margin: 4rem auto;
     line-height: 1.7;
 }
@@ -39,9 +39,17 @@
     border: 1px solid #ebebeb;
     font-size: 1.4rem;
     background: #f0f0f0;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: 600;
     font-family: inherit;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.contact-form-field input:focus,
+.contact-form-field textarea:focus {
+    border-color: var(--skyblue);
+    box-shadow: 0 0 0 3px rgba(37, 150, 190, 0.15);
 }
 
 .contact-form-field input {
@@ -93,13 +101,9 @@ label {
     font-size: 1.8rem;
     font-weight: 500;
     margin-top: 2rem;
-    border: 1px solid rgba(128, 128, 128, 0.121);
-    box-shadow: rgba(0, 0, 0, 0.075) 0px 0.7px 0.7px -0.6px,
-        rgba(0, 0, 0, 0.07) 0px 1.8px 1.8px -1.2px,
-        rgba(0, 0, 0, 0.07) 0px 3.6px 3.6px -1.8px,
-        rgba(0, 0, 0, 0.063) 0px 6.8px 6.8px -2.5px,
-        rgba(0, 0, 0, 0.05) 0px 13.6px 13.6px -3.1px,
-        rgba(0, 0, 0, 0.024) 0px 30px 30px -3.7px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease-in-out;
 }
 
