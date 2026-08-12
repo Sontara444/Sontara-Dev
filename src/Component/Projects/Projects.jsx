@@ -15,14 +15,14 @@ const Projects = () => {
           {visibleProjects.map((item, index) => (
             <div className={`project-card ${index === 0 ? "span-two" : ""}`} key={index}>
               <div className="project-image">
-                <img src={item.img} alt={item.title} />
+                <img src={item.img} alt={item.title} loading="lazy" />
               </div>
               <div className="project-content">
                 <h2 className="project-type">{item.highlight}</h2>
                 <h1 className="project-title">{item.title}</h1>
                 <p className="project-description">{item.description}</p>
                 <a href={item.link} className="project-link" target="_blank" rel="noopener noreferrer">
-                  View Project <img src={item.arrow_icon} alt="" />
+                  View Project <img src={item.arrow_icon} alt="" loading="lazy" />
                 </a>
               </div>
             </div>

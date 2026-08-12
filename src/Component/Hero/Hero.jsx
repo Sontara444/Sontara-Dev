@@ -57,18 +57,17 @@ const Hero = () => {
                 </h3>
               </div>
               <div className="skills-icon">
-                <img src={assets.html_img} alt="HTML" />
-                <img src={assets.css_img} alt="CSS" />
-                <img src={assets.javascript_img} alt="JavaScript" />
-                <img src={assets.react_img} alt="React.js" />
+                <img src={assets.html_img} alt="HTML" loading="lazy" />
+                <img src={assets.css_img} alt="CSS" loading="lazy" />
+                <img src={assets.javascript_img} alt="JavaScript" loading="lazy" />
+                <img src={assets.react_img} alt="React.js" loading="lazy" />
 
-                <img src={assets.mongodb_img} alt="MongoDB" />
-                <img src={assets.express_img} alt="Express.js" />
-                <img src={assets.nodejs_img} alt="Node.js" />
-                <img src={assets.react_img} alt="React.js" />
+                <img src={assets.mongodb_img} alt="MongoDB" loading="lazy" />
+                <img src={assets.express_img} alt="Express.js" loading="lazy" />
+                <img src={assets.nodejs_img} alt="Node.js" loading="lazy" />
 
-                <img src={assets.sass_img} alt="Sass" />
-                <img src={assets.git_img} alt="Git" />
+                <img src={assets.sass_img} alt="Sass" loading="lazy" />
+                <img src={assets.git_img} alt="Git" loading="lazy" />
               </div>
             </div>
           </div>
@@ -76,7 +75,7 @@ const Hero = () => {
             <picture>
               <source srcSet={assets.profile2_img} type="image/webp" />
               <source srcSet={assets.profile1_img} type="image/min" />
-              <img className="blob" src={assets.profile1_img} alt="" />
+              <img className="blob" src={assets.profile1_img} alt="" fetchpriority="high" />
             </picture>
           </div>
         </div>
