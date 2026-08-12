@@ -6,7 +6,7 @@ const projectData = [
     title: "Shopfinyra E-Commerce",
     highlight: "E-Commerce",
     description:
-      "A modern e-commerce platform offering a seamless shopping experience with a clean and responsive design.",
+      "A feature-rich platform offering a seamless and intuitive shopping experience.",
     img: assets.shopfinyra_img,
     link: "https://shopfinyra.vercel.app/",
     color: "purple",
@@ -17,7 +17,7 @@ const projectData = [
     title: "10 Minute Mail",
     highlight: "Utility",
     description:
-      "A fast and disposable 10-minute temporary email service to protect privacy and avoid spam.",
+      "An instant, disposable email service to protect your privacy and avoid spam.",
     img: assets.mailcheap_img,
     link: "https://www.mailcheap.io/10-minute-mail",
     color: "blue",
