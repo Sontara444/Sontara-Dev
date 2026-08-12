@@ -45,22 +45,18 @@ const About = () => {
               I’m a <strong>Frontend Web Developer</strong> passionate about
               building user-friendly and visually appealing websites and web
               applications that contribute to a product's success. Check out
-              some of my work in the
-              <strong>Projects</strong> section.
+              some of my work in the <strong>Projects</strong> section.
             </p>
             <p className="sub-head">
               I also enjoy sharing insights and experiences from my journey in
               <strong> Web Development</strong> to help others in the developer
-              community. Connect with me on
-              <a
+              community. Connect with me on <a
                 href="https://www.linkedin.com/in/sontararajput/"
                 className="linkedin"
               >
                 LinkedIn
-              </a>
-              , where I regularly post valuable content related to
-              <strong> Web Development</strong> and <strong>Programming</strong>
-              .
+              </a>, where I regularly post valuable content related to
+              <strong> Web Development</strong> and <strong>Programming</strong>.
             </p>
 
             <div className="tab-container">
@@ -85,20 +81,20 @@ const About = () => {
                 </button>
               </div>
               <div className="tab-wrapper">
-                <div id="London" className="tabcontent active">
+                <div id="London" className="tabcontent active" style={{ display: "block" }}>
                   <h2 className="active">Education</h2>
                   <div className="education-details">
                     <div className="education-item ">
-                      <h3>Delhi University - PGDAV College </h3>
+                      <h3>University of Delhi - PGDAV College </h3>
                       <p>Bachelor of Commerce </p>
                       <div className="education-year">
                         <i className="fa-solid fa-calendar-days"></i>
-                        <p>2019-2022</p>
+                        <p>2019-2023</p>
                       </div>
                     </div>
                     <div className="education-item">
                       <h3>Government girls senior secondary School </h3>
-                      <p>AISSCE (Class XII) - Commerce</p>
+                      <p>CBSE (Class XII) - Commerce</p>
                       <div className="education-year">
                         <i className="fa-solid fa-calendar-days"></i>
                         <p>2018-2019</p>
