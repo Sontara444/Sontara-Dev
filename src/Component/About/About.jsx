@@ -42,7 +42,7 @@ const About = () => {
             </div>
 
             <p className="sub-head">
-              I’m a <strong>Frontend Web Developer</strong> passionate about
+              I’m a <strong>Full-Stack Developer</strong> passionate about
               building user-friendly and visually appealing websites and web
               applications that contribute to a product's success. Check out
               some of my work in the <strong>Projects</strong> section.

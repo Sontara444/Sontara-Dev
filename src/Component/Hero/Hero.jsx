@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-left">
             <div className="header">
-              <h1>FRONTEND-REACT</h1>
+              <h1>FULL-STACK</h1>
               <h2>
                 {" "}
                 DEVELOPER
@@ -21,7 +21,7 @@ const Hero = () => {
               </h2>
 
               <p>
-                Hi, I'm Sontara Rajput. A passionate Front-end React Developer
+                Hi, I'm Sontara Rajput. A passionate Full-Stack Developer
                 based in India.{" "}
                 <span className="lolipop">
                   <img src={assets.lolipop_img} alt="" />
@@ -53,7 +53,7 @@ const Hero = () => {
             <div className="skills">
               <div className="tech-content">
                 <h3>
-                  Tech Slack <span className="line"></span>
+                  Tech Stack <span className="line"></span>
                 </h3>
               </div>
               <div className="skills-icon">

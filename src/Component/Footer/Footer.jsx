@@ -11,8 +11,8 @@ const Footer = () => {
           <div className="footer-left-content">
             <h2 className="footer-head">SONTARA RAJPUT</h2>
             <p className="footer-sub-head">
-              A Frontend focused Web Developer building the Frontend of
-              Websites and Web Applications that leads to the success of the
+              A Full-Stack Developer building scalable
+              Websites and Web Applications that lead to the success of the
               overall product.
             </p>
           </div>
