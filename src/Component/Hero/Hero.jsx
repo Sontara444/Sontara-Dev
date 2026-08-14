@@ -16,7 +16,7 @@ const Hero = () => {
                 DEVELOPER
                 <span>
                   {" "}
-                  <img src={assets.hand_img} alt=" " />
+                  <img src={assets.hand_img} alt=" " className="wave-hand" />
                 </span>
               </h2>
 
