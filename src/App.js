@@ -3,8 +3,8 @@ import "./App.css";
 import Navbar from "./Component/Navbar/Navbar";
 import { BrowserRouter as Main, Routes, Route } from "react-router-dom";
 import Footer from "./Component/Footer/Footer";
+import Home from "./Pages/Home";
 
-const Home = lazy(() => import("./Pages/Home"));
 const About = lazy(() => import("./Component/About/About"));
 const Contact = lazy(() => import("./Component/Contact/Contact"));
 const Projects = lazy(() => import("./Component/Projects/Projects"));
