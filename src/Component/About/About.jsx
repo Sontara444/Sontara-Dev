@@ -1,24 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./About.css";
 import { assets } from "../Assets/assets";
 import Expertise from "../Expertise/Expertise";
 
 const About = () => {
-  const openCity = (evt, cityName) => {
-    var i, tabcontent, tablinks;
+  const [activeTab, setActiveTab] = useState("London");
 
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace("active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  };
   return (
     <>
       <div className="about">
@@ -53,6 +40,8 @@ const About = () => {
               community. Connect with me on <a
                 href="https://www.linkedin.com/in/sontararajput/"
                 className="linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 LinkedIn
               </a>, where I regularly post valuable content related to
@@ -62,26 +51,26 @@ const About = () => {
             <div className="tab-container">
               <div className="tab">
                 <button
-                  onClick={(event) => openCity(event, "London")}
-                  className="tablinks active"
+                  onClick={() => setActiveTab("London")}
+                  className={`tablinks ${activeTab === "London" ? "active" : ""}`}
                 >
                   Education
                 </button>
                 <button
-                  onClick={(event) => openCity(event, "Paris")}
-                  className="tablinks "
+                  onClick={() => setActiveTab("Paris")}
+                  className={`tablinks ${activeTab === "Paris" ? "active" : ""}`}
                 >
                   Personal
                 </button>
                 <button
-                  onClick={(event) => openCity(event, "Tokyo")}
-                  className="tablinks"
+                  onClick={() => setActiveTab("Tokyo")}
+                  className={`tablinks ${activeTab === "Tokyo" ? "active" : ""}`}
                 >
                   Interest
                 </button>
               </div>
               <div className="tab-wrapper">
-                <div id="London" className="tabcontent active" style={{ display: "block" }}>
+                <div id="London" className={`tabcontent ${activeTab === "London" ? "active" : ""}`} style={{ display: activeTab === "London" ? "block" : "none" }}>
                   <h2 className="active">Education</h2>
                   <div className="education-details">
                     <div className="education-item ">
@@ -102,7 +91,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div id="Paris" className="tabcontent">
+                <div id="Paris" className={`tabcontent ${activeTab === "Paris" ? "active" : ""}`} style={{ display: activeTab === "Paris" ? "block" : "none" }}>
                   <h2>Personal Information</h2>
                   <div className="personal-details">
                     <div className="personal-icons">
@@ -130,7 +119,7 @@ const About = () => {
                     </div>
                   </div>
                 </div>
-                <div id="Tokyo" className="tabcontent">
+                <div id="Tokyo" className={`tabcontent ${activeTab === "Tokyo" ? "active" : ""}`} style={{ display: activeTab === "Tokyo" ? "block" : "none" }}>
                   <h2>Interests</h2>
                   <div className="interests">
                     <ul className="interests-list">

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Hero.css";
+import { Link } from "react-router-dom";
 
 import { assets } from "../Assets/assets";
 
@@ -29,24 +30,23 @@ const Hero = () => {
               </p>
 
               <div className="social-icons">
-                <a href="https://www.linkedin.com/in/sontararajput/">
-                  <img src={assets.linkedin_img} alt="" target="_blank" />
+                <a href="https://www.linkedin.com/in/sontararajput/" target="_blank" rel="noopener noreferrer">
+                  <img src={assets.linkedin_img} alt="LinkedIn" />
                 </a>
-                <a href="https://github.com/Sontara444">
+                <a href="https://github.com/Sontara444" target="_blank" rel="noopener noreferrer">
                   <img
                     className="hero-git"
                     src={assets.github_img}
-                    alt=""
-                    target="_blank"
+                    alt="GitHub"
                   />
                 </a>
               </div>
               <div className="contact-btn">
                 <div className="cv-btn hero-button">
-                  <a href="https://drive.google.com/file/d/1Mr8EwBwhCZ0953r--9CdHYhdWCGkKYfU/view?usp=sharing">Download CV</a>
+                  <a href="https://drive.google.com/file/d/1Mr8EwBwhCZ0953r--9CdHYhdWCGkKYfU/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a>
                 </div>
                 <div className="contact-me-btn hero-button">
-                  <a href="/contact">Contact Me</a>
+                  <Link to="/contact">Contact Me</Link>
                 </div>
               </div>
             </div>
@@ -73,9 +73,9 @@ const Hero = () => {
           </div>
           <div className="hero-right">
             <picture>
-              <source srcSet={assets.profile2_img} type="image/webp" />
-              <source srcSet={assets.profile1_img} type="image/min" />
-              <img className="blob" src={assets.profile1_img} alt="" fetchpriority="high" />
+              <source srcSet={assets.profile1_img} type="image/webp" />
+              <source srcSet={assets.profile2_img} type="image/png" />
+              <img className="blob" src={assets.profile1_img} alt="Profile" fetchpriority="high" />
             </picture>
           </div>
         </div>
